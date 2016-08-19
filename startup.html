@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset="utf-8">
+<meta name= "viewport" content= "width=device-diwth, initial- scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src= "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min/js"></script>
+<title>Trump odds</title>
+<style>
+.center {
+    padding: 100px 0;
+   
+}
+h2 {
+
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 270px;
+    margin-left: 270px;
+
+}
+</style>
+</head>
+
+<body>
+
+<div align = "center" class= "center" border-style: solid border-width: 5px;>
+
+
+<img src="https://s4.postimg.io/gqwdchnnx/ILIKEIT.png" alt="Trump's Face" style="width:200px;height:200px;">
+
+    <h1>
+    Current odds of a Trump presidency:
+    </h1>
+    <br>
+    <h2>
+    <font color = "BLUE">Pretty low - but not impossible </font>
+    </h2>
+    <p>
+    Source: http://projects.fivethirtyeight.com/2016-election-forecast/#now
+    </p>
+	<br>
+    <h3 id = "quotation"></h3>
+    
+    </div>
+
+<script>
+(function() {
+  "use strict";
+
+  var el = document.getElementById("quotation");
+
+  var quotes = [
+    ["An extremely credible source has called my office and told me that Barack Obama’s birth certificate is a fraud"+ "<br>" + " -Donald Trump"],
+    ["Ariana Huffington is unattractive, both inside and out. I fully understand why her former husband left her for a man – he made a good decision"+"<br>" + " -Donald Trump"],
+    ["You know, it really doesn’t matter what the media write as long as you’ve got a young, and beautiful, piece of ass"+"<br>" + " -Donald Trump"],
+    ["I will build a great wall – and nobody builds walls better than me, believe me"+ "<br>" +" -Donald Trump"],
+    ["They’re bringing drugs. They’re bring crime. They’re rapists… And some, I assume, are good people"+"<br>" +" -Donald Trump"],
+    ["All of the women on The Apprentice flirted with me – consciously or unconsciously. That’s to be expected"+"<br>" +" -Donald Trump"],
+    ["The beauty of me is that I’m very rich"+"<br>" +" -Donald Trump"],
+    ["It’s freezing and snowing in New York – we need global warming"+"<br>" +" -Donald Trump"],
+    ["If Ivanka weren’t my daughter, perhaps I’d be dating her"+"<br>" +" -Donald Trump"],
+    ["My fingers are long and beautiful, as, it has been well documented, are various other parts of my body"+"<br>" +" -Donald Trump"],
+    ["I have never seen a thin person drinking Diet Coke"+"<br>" +" -Donald Trump"],
+    ["I think the only difference between me and the other candidates is that I’m more honest and my women are more beautiful"+"<br>" +" -Donald Trump"],
+    ["You’re disgusting"+"<br>" +" -Donald Trump"],
+    ["The point is, you can never be too greedy"+"<br>" +" -Donald Trump"],
+    ["My IQ is one of the highest — and you all know it! Please don't feel so stupid or insecure; it's not your fault"+"<br>" +" -Donald Trump"],
+    ["'If they're small, something else must be small.' I guarantee you there's no problem. I guarantee"+"<br>" +" -Donald Trump"],
+    ["Be careful, Lyin' Ted, or I will spill the beans on your wife!"+"<br>" +" -Donald Trump"],
+    ["I watched our police and our firemen, down on 7-Eleven, down at the World Trade Center, right after it came down"+"<br>" +" -Donald Trump"],
+    ["We are going to win bigly, believe me"+"<br>"+" -Donald Trump"],
+    ["Those who can make you believe absurdities can make you commit atrocities"+"<br>" +" -Voltaire"],
+    ["Insanity in individuals is something rare - but in groups, parties, nations and epochs, it is the rule"+"<br>" +" -Friedrich Nietzsche"],
+    ["A negative judgment gives you more satisfaction than praise, provided it smacks of jealousy"+"<br>" +" -Jean Baudrillard"]
+
+  ];
+
+  function rand(xs) {
+    return xs.slice(0).sort(function(){
+      return .5 - Math.random();
+    });
+  }
+
+  function quote(q) {
+    return "<p>&ldquo;"+ q[0] +"&rdquo; &mdash; <em>"+  + q[1] +"</em> + </p>";
+  }
+
+  el.innerHTML = rand(quotes)[0];
+
+}());
+</script>
+
+    </body>
+
+</html>
